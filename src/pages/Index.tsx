@@ -1,13 +1,28 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import PageLayout from '@/components/layout/PageLayout';
+import HeroSection from '@/components/home/HeroSection';
+import AboutPreview from '@/components/home/AboutPreview';
+import ServicesPreview from '@/components/home/ServicesPreview';
+import WhyChoosePreview from '@/components/home/WhyChoosePreview';
+import ProcessSteps from '@/components/home/ProcessSteps';
+import TestimonialsSlider from '@/components/home/TestimonialsSlider';
+import CTABanner from '@/components/home/CTABanner';
 
+/**
+ * Home Page - Main landing page for TalentBridge recruitment website
+ * Features hero, about preview, services, why choose us, process, testimonials, and CTA
+ */
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <PageLayout>
+      {/* SEO Meta - handled by index.html for this SPA */}
+      <HeroSection />
+      <AboutPreview />
+      <ServicesPreview />
+      <WhyChoosePreview />
+      <ProcessSteps />
+      <TestimonialsSlider />
+      <CTABanner />
+    </PageLayout>
   );
 };
 
