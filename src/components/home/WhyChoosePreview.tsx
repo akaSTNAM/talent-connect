@@ -55,7 +55,7 @@ const WhyChoosePreview = () => {
         badge="Why Choose Us"
         title={
           <>
-            The <span className="gradient-text">TalentBridge</span> Advantage
+            The <span className="gradient-text">Phoenix Consultancy LLP</span> Advantage
           </>
         }
         subtitle="We combine industry expertise with innovative approaches to deliver exceptional recruitment outcomes."

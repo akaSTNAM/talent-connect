@@ -77,7 +77,7 @@ const ContactPage = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['info@talentbridge.com', 'careers@talentbridge.com'],
+      details: ['info@Phoenix Consultancy LLP.com', 'careers@Phoenix Consultancy LLP.com'],
     },
     {
       icon: Phone,

@@ -162,10 +162,10 @@ const Footer = () => {
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-accent flex-shrink-0" />
                 <a
-                  href="mailto:info@talentbridge.com"
+                  href="mailto:info@Phoenix Consultancy LLP.com"
                   className="text-primary-foreground/80 hover:text-accent transition-colors text-sm"
                 >
-                  info@talentbridge.com
+                  info@Phoenix Consultancy LLP.com
                 </a>
               </li>
             </ul>
@@ -178,7 +178,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-primary-foreground/60 text-sm">
-              © {currentYear} TalentBridge. All rights reserved.
+              © {currentYear} Phoenix Consultancy LLP. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link

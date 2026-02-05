@@ -8,7 +8,7 @@ import TestimonialsSlider from '@/components/home/TestimonialsSlider';
 import CTABanner from '@/components/home/CTABanner';
 
 /**
- * Home Page - Main landing page for TalentBridge recruitment website
+ * Home Page - Main landing page for Phoenix Consultancy LLP recruitment website
  * Features hero, about preview, services, why choose us, process, testimonials, and CTA
  */
 const Index = () => {

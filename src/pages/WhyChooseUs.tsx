@@ -87,7 +87,7 @@ const WhyChooseUsPage = () => {
               Why Choose Us
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6">
-              The <span className="gradient-text">TalentBridge</span> Advantage
+              The <span className="gradient-text">Phoenix Consultancy LLP</span> Advantage
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
               We're not just another recruitment agency. We're your strategic
@@ -113,7 +113,7 @@ const WhyChooseUsPage = () => {
               What Sets Us <span className="gradient-text">Apart</span>
             </>
           }
-          subtitle="Discover the unique advantages that make TalentBridge the preferred choice for leading organizations."
+          subtitle="Discover the unique advantages that make Phoenix Consultancy LLP the preferred choice for leading organizations."
         />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -150,7 +150,7 @@ const WhyChooseUsPage = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-accent bg-accent/10 rounded-full">
-              The TalentBridge Way
+              The Phoenix Consultancy LLP Way
             </span>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
               Traditional Recruitment vs.{' '}
@@ -232,7 +232,7 @@ const WhyChooseUsPage = () => {
           className="gradient-primary rounded-2xl p-8 md:p-12 text-center"
         >
           <h2 className="text-2xl md:text-3xl font-display font-bold text-primary-foreground mb-4">
-            Experience the TalentBridge Difference
+            Experience the Phoenix Consultancy LLP Difference
           </h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
             Join hundreds of companies that have transformed their hiring process

@@ -64,7 +64,7 @@ const timeline = [
   {
     year: '2014',
     title: 'Founded',
-    description: 'TalentBridge was born from a vision to transform recruitment.',
+    description: 'Phoenix Consultancy LLP was born from a vision to transform recruitment.',
   },
   {
     year: '2016',
@@ -135,7 +135,7 @@ const AboutPage = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                TalentBridge was founded with a simple belief: recruitment should
+                Phoenix Consultancy LLP was founded with a simple belief: recruitment should
                 be about more than just matching resumes to job descriptions. It
                 should be about understanding people, cultures, and aspirations.
               </p>
@@ -189,7 +189,7 @@ const AboutPage = () => {
               Mission, Vision & <span className="gradient-text">Values</span>
             </>
           }
-          subtitle="The principles that guide everything we do at TalentBridge."
+          subtitle="The principles that guide everything we do at Phoenix Consultancy LLP."
         />
 
         <div className="grid md:grid-cols-3 gap-8">

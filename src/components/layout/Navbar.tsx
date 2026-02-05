@@ -62,7 +62,7 @@ const Navbar = () => {
                 <span className="text-primary-foreground font-display font-bold text-xl">T</span>
               </div>
               <span className="ml-2 text-xl font-display font-bold text-foreground">
-                Talent<span className="text-accent">Bridge</span>
+                Phoenix <span className="text-accent">Consultancy LLP</span>
               </span>
             </motion.div>
           </Link>

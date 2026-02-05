@@ -18,7 +18,7 @@ const queryClient = new QueryClient();
 
 /**
  * Main App component with routing and global providers
- * TalentBridge - Professional Recruitment & IT Consulting Website
+ * Phoenix Consultancy LLP - Professional Recruitment & IT Consulting Website
  */
 const App = () => (
   <QueryClientProvider client={queryClient}>

@@ -67,7 +67,7 @@ const AboutPreview = () => {
           />
 
           <p className="text-muted-foreground leading-relaxed mb-6">
-            TalentBridge is a leading recruitment and IT consulting firm dedicated
+            Phoenix Consultancy LLP is a leading recruitment and IT consulting firm dedicated
             to bridging the gap between exceptional talent and forward-thinking
             organizations. With over a decade of experience, we've helped hundreds
             of companies build world-class teams.

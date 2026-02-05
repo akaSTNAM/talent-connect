@@ -39,7 +39,7 @@ const faqs = [
       'Our screening process includes skills assessment, cultural fit evaluation, background checks, and reference verification. For technical roles, we also conduct coding challenges and technical interviews.',
   },
   {
-    question: 'What makes TalentBridge different from other recruiters?',
+    question: 'What makes Phoenix Consultancy LLP different from other recruiters?',
     answer:
       'We combine industry expertise with personalized service. Each client gets a dedicated account manager, and our recruiters specialize in specific domains. We focus on long-term partnerships, not just filling positions.',
   },
@@ -210,7 +210,7 @@ const MorePage = () => {
                     Frequently Asked <span className="gradient-text">Questions</span>
                   </>
                 }
-                subtitle="Everything you need to know about working with TalentBridge."
+                subtitle="Everything you need to know about working with Phoenix Consultancy LLP."
               />
 
               <div className="glass-card rounded-2xl p-6 md:p-8">

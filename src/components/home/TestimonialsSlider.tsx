@@ -10,28 +10,28 @@ import SectionHeader from '@/components/ui/SectionHeader';
 const testimonials = [
   {
     quote:
-      "TalentBridge transformed our hiring process. Within three weeks, we had five exceptional developers on our team. Their understanding of our culture made all the difference.",
+      "Phoenix Consultancy LLP transformed our hiring process. Within three weeks, we had five exceptional developers on our team. Their understanding of our culture made all the difference.",
     author: 'Sarah Johnson',
     role: 'CTO',
     company: 'TechCorp Solutions',
   },
   {
     quote:
-      "The quality of candidates we received was outstanding. Every single hire through TalentBridge has exceeded our expectations. They truly understand the tech industry.",
+      "The quality of candidates we received was outstanding. Every single hire through Phoenix Consultancy LLP has exceeded our expectations. They truly understand the tech industry.",
     author: 'Michael Chen',
     role: 'VP of Engineering',
     company: 'InnovateCo',
   },
   {
     quote:
-      "Working with TalentBridge was seamless from start to finish. Their team is professional, responsive, and genuinely invested in finding the right fit for both parties.",
+      "Working with Phoenix Consultancy LLP was seamless from start to finish. Their team is professional, responsive, and genuinely invested in finding the right fit for both parties.",
     author: 'Emily Rodriguez',
     role: 'HR Director',
     company: 'GlobalSoft Inc.',
   },
   {
     quote:
-      "We've partnered with many recruiters over the years, but TalentBridge stands out. Their expertise in IT recruitment is unmatched, and they deliver results consistently.",
+      "We've partnered with many recruiters over the years, but Phoenix Consultancy LLP stands out. Their expertise in IT recruitment is unmatched, and they deliver results consistently.",
     author: 'David Park',
     role: 'Founder & CEO',
     company: 'DataPrime Analytics',
@@ -77,7 +77,7 @@ const TestimonialsSlider = () => {
             What Our <span className="gradient-text">Clients Say</span>
           </>
         }
-        subtitle="Don't just take our word for it. Here's what industry leaders say about working with TalentBridge."
+        subtitle="Don't just take our word for it. Here's what industry leaders say about working with Phoenix Consultancy LLP."
       />
 
       <div className="max-w-4xl mx-auto">
