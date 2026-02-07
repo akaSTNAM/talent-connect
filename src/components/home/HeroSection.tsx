@@ -60,8 +60,8 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="mt-8 text-4xl sm:text-5xl md:text-6xl font-display font-bold text-foreground leading-tight"
           >
-            We Apply to Jobs{' '}
-            <span className="gradient-text">For You</span>
+            Unlock Your Path to Premiers{' '}
+            <span className="gradient-text">IT Opportunitie</span>
           </motion.h1>
 
           {/* Subheading */}
