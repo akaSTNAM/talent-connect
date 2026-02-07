@@ -1,26 +1,27 @@
 import PageLayout from '@/components/layout/PageLayout';
 import HeroSection from '@/components/home/HeroSection';
-import AboutPreview from '@/components/home/AboutPreview';
-import ServicesPreview from '@/components/home/ServicesPreview';
-import WhyChoosePreview from '@/components/home/WhyChoosePreview';
-import ProcessSteps from '@/components/home/ProcessSteps';
-import TestimonialsSlider from '@/components/home/TestimonialsSlider';
+import ProblemSection from '@/components/home/ProblemSection';
+import HowItWorksPreview from '@/components/home/HowItWorksPreview';
+import BenefitsSection from '@/components/home/BenefitsSection';
+import PricingPreview from '@/components/home/PricingPreview';
+import TestimonialsSection from '@/components/home/TestimonialsSection';
+import FAQSection from '@/components/home/FAQSection';
 import CTABanner from '@/components/home/CTABanner';
 
 /**
- * Home Page - Main landing page for Phoenix Consultancy LLP recruitment website
- * Features hero, about preview, services, why choose us, process, testimonials, and CTA
+ * Home Page - Phoenix Consultancy Job Application SaaS
+ * Conversion-focused landing page for international students and job seekers
  */
 const Index = () => {
   return (
     <PageLayout>
-      {/* SEO Meta - handled by index.html for this SPA */}
       <HeroSection />
-      <AboutPreview />
-      <ServicesPreview />
-      <WhyChoosePreview />
-      <ProcessSteps />
-      <TestimonialsSlider />
+      <ProblemSection />
+      <HowItWorksPreview />
+      <BenefitsSection />
+      <PricingPreview />
+      <TestimonialsSection />
+      <FAQSection />
       <CTABanner />
     </PageLayout>
   );
