@@ -1,31 +1,29 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 /**
- * Navigation links configuration
+ * Navigation links for Phoenix Consultancy SaaS
  */
 const navLinks = [
   { name: 'Home', path: '/' },
-  { name: 'Services', path: '/services' },
-  { name: 'Why Choose Us', path: '/why-choose-us' },
+  { name: 'How It Works', path: '/how-it-works' },
+  { name: 'Pricing', path: '/pricing' },
   { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
-  { name: 'More', path: '/more' },
 ];
 
 /**
  * Sticky Navbar with mobile responsive menu
- * Features smooth animations and glassmorphism effect on scroll
+ * Clean SaaS-style navigation
  */
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
-  // Handle scroll effect for navbar background
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -34,7 +32,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setIsOpen(false);
   }, [location.pathname]);
@@ -46,7 +43,7 @@ const Navbar = () => {
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-background/80 backdrop-blur-xl shadow-glass border-b border-border/50'
+          ? 'bg-background/95 backdrop-blur-lg shadow-sm border-b border-border'
           : 'bg-transparent'
       }`}
     >
@@ -55,14 +52,14 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <motion.div
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               className="flex items-center"
             >
-              <div className="w-10 h-10 rounded-lg gradient-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-display font-bold text-xl">T</span>
+              <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
+                <span className="text-primary-foreground font-display font-bold text-lg">P</span>
               </div>
-              <span className="ml-2 text-xl font-display font-bold text-foreground">
-                Phoenix <span className="text-accent">Consultancy LLP</span>
+              <span className="ml-2.5 text-xl font-display font-bold text-foreground">
+                Phoenix<span className="text-primary ml-1">Consultancy</span>
               </span>
             </motion.div>
           </Link>
@@ -75,7 +72,7 @@ const Navbar = () => {
                 to={link.path}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                   location.pathname === link.path
-                    ? 'text-accent bg-accent/10'
+                    ? 'text-primary bg-primary/5'
                     : 'text-muted-foreground hover:text-foreground hover:bg-secondary'
                 }`}
               >
@@ -84,10 +81,13 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA Button - Desktop */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Button asChild variant="default" className="gradient-primary text-primary-foreground hover:opacity-90 transition-opacity">
-              <Link to="/contact">Get Started</Link>
+          {/* CTA Buttons - Desktop */}
+          <div className="hidden md:flex items-center space-x-3">
+            <Button asChild variant="ghost" size="sm">
+              <Link to="/login">Log In</Link>
+            </Button>
+            <Button asChild size="sm" className="bg-primary hover:bg-primary/90">
+              <Link to="/signup">Start Free Trial</Link>
             </Button>
           </div>
 
@@ -110,7 +110,7 @@ const Navbar = () => {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden overflow-hidden"
+              className="md:hidden overflow-hidden bg-background border-t border-border"
             >
               <div className="py-4 space-y-2">
                 {navLinks.map((link, index) => (
@@ -124,7 +124,7 @@ const Navbar = () => {
                       to={link.path}
                       className={`block px-4 py-3 rounded-lg text-base font-medium transition-all ${
                         location.pathname === link.path
-                          ? 'text-accent bg-accent/10'
+                          ? 'text-primary bg-primary/5'
                           : 'text-muted-foreground hover:text-foreground hover:bg-secondary'
                       }`}
                     >
@@ -132,16 +132,14 @@ const Navbar = () => {
                     </Link>
                   </motion.div>
                 ))}
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 }}
-                  className="pt-4"
-                >
-                  <Button asChild className="w-full gradient-primary text-primary-foreground">
-                    <Link to="/contact">Get Started</Link>
+                <div className="pt-4 px-4 space-y-2">
+                  <Button asChild variant="outline" className="w-full">
+                    <Link to="/login">Log In</Link>
                   </Button>
-                </motion.div>
+                  <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                    <Link to="/signup">Start Free Trial</Link>
+                  </Button>
+                </div>
               </div>
             </motion.div>
           )}

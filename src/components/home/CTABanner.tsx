@@ -1,65 +1,54 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Rocket } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 /**
- * Call to Action banner component
- * Eye-catching section to drive conversions
+ * Final CTA banner for landing page
  */
 const CTABanner = () => {
   return (
     <section className="section-container">
       <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        className="relative overflow-hidden rounded-3xl gradient-primary p-8 md:p-12 lg:p-16"
+        className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-primary/80 p-8 md:p-12 lg:p-16 text-center"
       >
-        {/* Background Decorations */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent/20 blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-primary-foreground/10 blur-3xl" />
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-white blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-white blur-3xl" />
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 text-center max-w-3xl mx-auto">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-primary-foreground mb-4"
-          >
-            Ready to Build Your Dream Team?
-          </motion.h2>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-lg md:text-xl text-primary-foreground/80 mb-8"
-          >
-            Let's discuss how we can help you find exceptional talent that drives
-            your business forward.
-          </motion.p>
-
+        <div className="relative z-10 max-w-2xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+            transition={{ delay: 0.2, type: 'spring' }}
+            className="w-16 h-16 mx-auto rounded-2xl bg-primary-foreground/20 flex items-center justify-center mb-6"
           >
+            <Rocket className="w-8 h-8 text-primary-foreground" />
+          </motion.div>
+
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground mb-4">
+            Ready to Focus on What Matters?
+          </h2>
+          
+          <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
+            Let us handle your job applications. Start your 15-day free trial 
+            today and get back the time you need to prepare for interviews.
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
               asChild
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 text-base px-8 h-12"
+              className="bg-white text-primary hover:bg-white/90 text-base px-8 h-12"
             >
-              <Link to="/contact">
-                Contact Us Today
+              <Link to="/signup">
+                Start Free Trial
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -69,9 +58,13 @@ const CTABanner = () => {
               size="lg"
               className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8 h-12"
             >
-              <Link to="/services">View Our Services</Link>
+              <Link to="/contact">Talk to Us</Link>
             </Button>
-          </motion.div>
+          </div>
+
+          <p className="mt-6 text-primary-foreground/60 text-sm">
+            No credit card required • Cancel anytime
+          </p>
         </div>
       </motion.div>
     </section>
