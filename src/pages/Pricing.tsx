@@ -19,7 +19,7 @@ const plans = [
     price: 30,
     period: '/month',
     description: 'For focused job searches with moderate volume',
-    applications: 50,
+    applications: 100,
     features: [
       { name: '50 targeted applications/month', included: true },
       { name: 'Resume review & feedback', included: true },
@@ -34,10 +34,10 @@ const plans = [
   },
   {
     name: 'Professional',
-    price: 50,
+    price: 70,
     period: '/month',
     description: 'Best value for serious job seekers',
-    applications: 100,
+    applications: 150,
     features: [
       { name: '100 targeted applications/month', included: true },
       { name: 'Resume review & optimization', included: true },
@@ -55,7 +55,7 @@ const plans = [
     price: 150,
     period: '/month',
     description: 'Maximum support for urgent job searches',
-    applications: 200,
+    applications: 250,
     features: [
       { name: '200 targeted applications/month', included: true },
       { name: 'Full resume optimization', included: true },
