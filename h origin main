@@ -1,0 +1,41 @@
+[33mcommit 61cc825b90108dd7bae0974bc843a8633fb9d769[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ayush Kundwani <ayushkundwani3@gmail.com>
+Date:   Tue Jul 14 00:22:45 2026 +0530
+
+    Update pricing and add phoenix favicon
+
+[1mdiff --git a/src/pages/Pricing.tsx b/src/pages/Pricing.tsx[m
+[1mindex 32ccb73..53f53ca 100644[m
+[1m--- a/src/pages/Pricing.tsx[m
+[1m+++ b/src/pages/Pricing.tsx[m
+[36m@@ -19,7 +19,7 @@[m [mconst plans = [[m
+     price: 30,[m
+     period: '/month',[m
+     description: 'For focused job searches with moderate volume',[m
+[31m-    applications: 50,[m
+[32m+[m[32m    applications: 100,[m
+     features: [[m
+       { name: '50 targeted applications/month', included: true },[m
+       { name: 'Resume review & feedback', included: true },[m
+[36m@@ -34,10 +34,10 @@[m [mconst plans = [[m
+   },[m
+   {[m
+     name: 'Professional',[m
+[31m-    price: 50,[m
+[32m+[m[32m    price: 70,[m
+     period: '/month',[m
+     description: 'Best value for serious job seekers',[m
+[31m-    applications: 100,[m
+[32m+[m[32m    applications: 150,[m
+     features: [[m
+       { name: '100 targeted applications/month', included: true },[m
+       { name: 'Resume review & optimization', included: true },[m
+[36m@@ -55,7 +55,7 @@[m [mconst plans = [[m
+     price: 150,[m
+     period: '/month',[m
+     description: 'Maximum support for urgent job searches',[m
+[31m-    applications: 200,[m
+[32m+[m[32m    applications: 250,[m
+     features: [[m
+       { name: '200 targeted applications/month', included: true },[m
+       { name: 'Full resume optimization', included: true },[m
