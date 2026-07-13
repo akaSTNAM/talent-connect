@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-const productLinks = [
+  const productLinks = [
     { name: 'How It Works', path: '/how-it-works' },
     { name: 'Pricing', path: '/pricing' },
     { name: 'FAQ', path: '/faq' },
@@ -19,30 +19,25 @@ const productLinks = [
     { name: 'Careers', path: '/careers' },
   ];
 
-  const legalLinks = [
-    { name: 'Privacy Policy', path: '/privacy' },
-    { name: 'Terms of Service', path: '/terms' },
-    { name: 'Refund Policy', path: '/refund' },
-  ];
-
   return (
     <footer className="bg-secondary/50 border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-2 lg:col-span-2 space-y-4">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-9 h-9 rounded-xl overflow-hidden flex items-center justify-center">
-              <img src="/phoenix-logo.png" alt="Phoenix Consultancy" className="w-full h-full object-cover" />
-            </div>
-            <span className="text-xl font-display font-bold text-foreground">
-              Phoenix<span className="text-primary ml-1">Consultancy</span>
-            </span>
-          </Link>
+            <Link to="/" className="flex items-center space-x-2">
+              <div className="w-9 h-9 rounded-xl overflow-hidden flex items-center justify-center">
+                <img src="/phoenix-logo.png" alt="Phoenix Consultancy" className="w-full h-full object-cover" />
+              </div>
+              <span className="text-xl font-display font-bold text-foreground">
+                Phoenix<span className="text-primary ml-1">Consultancy</span>
+              </span>
+            </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">
               We handle your job applications so you can focus on getting hired. 
               Professional application support for international students and job seekers.
             </p>
+          </div>
 
           {/* Product Links */}
           <div className="space-y-4">
