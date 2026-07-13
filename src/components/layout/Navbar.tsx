@@ -55,8 +55,8 @@ const Navbar = () => {
               whileHover={{ scale: 1.02 }}
               className="flex items-center"
             >
-              <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-display font-bold text-lg">P</span>
+              <div className="w-9 h-9 rounded-xl overflow-hidden flex items-center justify-center">
+                <img src="/phoenix-logo.png" alt="Phoenix Consultancy" className="w-full h-full object-cover" />
               </div>
               <span className="ml-2.5 text-xl font-display font-bold text-foreground">
                 Phoenix<span className="text-primary ml-1">Consultancy</span>
