@@ -49,7 +49,7 @@ const HeroSection = () => {
           >
             <span className="badge-accent">
               <Clock className="w-4 h-4 mr-2" />
-              15-Day Free Trial • No Credit Card Required
+              3-Day Free Trial • No Credit Card Required
             </span>
           </motion.div>
 

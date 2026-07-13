@@ -10,7 +10,7 @@ import SectionHeader from '@/components/ui/SectionHeader';
 const plans = [
   {
     name: 'Starter',
-    price: 99,
+    price: 50,
     period: '/month',
     description: 'Perfect for focused job searches',
     applications: '50 applications/month',
@@ -24,7 +24,7 @@ const plans = [
   },
   {
     name: 'Professional',
-    price: 179,
+    price: 99,
     period: '/month',
     description: 'Best for serious job seekers',
     applications: '100 applications/month',
@@ -39,7 +39,7 @@ const plans = [
   },
   {
     name: 'Premium',
-    price: 299,
+    price: 150,
     period: '/month',
     description: 'Maximum coverage for urgent needs',
     applications: '200 applications/month',
@@ -61,7 +61,7 @@ const PricingPreview = () => {
       <SectionHeader
         badge="Pricing"
         title="Simple, Transparent Pricing"
-        subtitle="Start with a 15-day free trial. No credit card required. Cancel anytime."
+        subtitle="Start with a 3-day free trial. No credit card required. Cancel anytime."
       />
 
       <div className="grid md:grid-cols-3 gap-6 lg:gap-8">

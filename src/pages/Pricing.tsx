@@ -85,7 +85,7 @@ const faqs = [
   },
   {
     question: 'Is there a refund policy?',
-    answer: 'We offer a full refund within 7 days of your first paid subscription if you\'re not satisfied. The 15-day trial is completely free.',
+    answer: 'The 3-day trial is completely free.',
   },
 ];
 
@@ -101,7 +101,7 @@ const Pricing = () => {
               animate={{ opacity: 1, y: 0 }}
               className="badge-accent"
             >
-              15-Day Free Trial
+              3-Day Free Trial
             </motion.span>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -207,7 +207,7 @@ const Pricing = () => {
           className="mt-12 text-center"
         >
           <p className="text-muted-foreground text-sm">
-            All plans include a 15-day free trial. Cancel anytime with no questions asked.
+            All plans include a 3-day free trial. Cancel anytime with no questions asked.
           </p>
         </motion.div>
       </section>

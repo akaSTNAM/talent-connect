@@ -35,7 +35,7 @@ const faqs = [
   {
     question: 'What if I want to cancel?',
     answer:
-      'You can cancel anytime. There are no long-term contracts. We offer a 15-day free trial so you can try our service risk-free before committing.',
+      'You can cancel anytime. There are no long-term contracts. We offer a 3-day free trial so you can try our service risk-free before committing.',
   },
   {
     question: 'How do I track my applications?',
