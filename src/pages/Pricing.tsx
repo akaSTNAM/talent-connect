@@ -16,7 +16,7 @@ import {
 const plans = [
   {
     name: 'Starter',
-    price: 99,
+    price: 30,
     period: '/month',
     description: 'For focused job searches with moderate volume',
     applications: 50,
@@ -34,7 +34,7 @@ const plans = [
   },
   {
     name: 'Professional',
-    price: 179,
+    price: 50,
     period: '/month',
     description: 'Best value for serious job seekers',
     applications: 100,
@@ -52,7 +52,7 @@ const plans = [
   },
   {
     name: 'Premium',
-    price: 299,
+    price: 150,
     period: '/month',
     description: 'Maximum support for urgent job searches',
     applications: 200,
