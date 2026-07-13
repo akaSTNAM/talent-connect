@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Mail, Linkedin, Twitter } from 'lucide-react';
 
 /**
  * Footer component for Phoenix Consultancy SaaS
@@ -44,34 +43,6 @@ const productLinks = [
               We handle your job applications so you can focus on getting hired. 
               Professional application support for international students and job seekers.
             </p>
-            <div className="flex space-x-3">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={18} />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all"
-                aria-label="Twitter"
-              >
-                <Twitter size={18} />
-              </a>
-              <a
-                href="mailto:support@phoenixconsultancy.com"
-                className="p-2 rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-all"
-                aria-label="Email"
-              >
-                <Mail size={18} />
-              </a>
-            </div>
-          </div>
 
           {/* Product Links */}
           <div className="space-y-4">
