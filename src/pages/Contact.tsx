@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
   Mail, 
-  Phone, 
   MapPin, 
   Send,
   CheckCircle,
@@ -66,21 +65,16 @@ const ContactPage = () => {
     setTimeout(() => setIsSuccess(false), 5000);
   };
 
-  const contactInfo = [
+const contactInfo = [
     {
       icon: Mail,
       title: 'Email Us',
-      details: ['support@phoenixconsultancy.com', 'We reply within 24 hours'],
+      details: ['phoenix_consultancy@outlook.com', 'We reply within 24 hours'],
     },
     {
       icon: MessageSquare,
       title: 'Live Chat',
       details: ['Available Mon-Fri', '9am - 6pm EST'],
-    },
-    {
-      icon: Phone,
-      title: 'Call Us',
-      details: ['+1 (555) 123-4567', 'For urgent inquiries'],
     },
   ];
 
