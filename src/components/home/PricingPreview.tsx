@@ -15,7 +15,7 @@ const plans = [
     description: 'Perfect for focused job searches',
     applications: '50 applications/month',
     features: [
-      '50 targeted applications',
+      '100 targeted applications',
       'Resume review',
       'Application tracking dashboard',
       'Email support',
@@ -29,7 +29,7 @@ const plans = [
     description: 'Best for serious job seekers',
     applications: '100 applications/month',
     features: [
-      '100 targeted applications',
+      '200 targeted applications',
       'Resume + LinkedIn optimization',
       'Priority application tracking',
       'Interview prep resources',
@@ -44,7 +44,7 @@ const plans = [
     description: 'Maximum coverage for urgent needs',
     applications: '200 applications/month',
     features: [
-      '200 targeted applications',
+      '300 targeted applications',
       'Full profile optimization',
       'Dedicated account manager',
       '1-on-1 interview coaching',
