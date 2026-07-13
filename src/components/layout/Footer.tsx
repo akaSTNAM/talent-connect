@@ -30,7 +30,7 @@ const Footer = () => {
   return (
     <footer className="bg-secondary/50 border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-2 lg:col-span-2 space-y-4">
             <Link to="/" className="flex items-center space-x-2">
@@ -108,22 +108,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Legal Links */}
-          <div className="space-y-4">
-            <h4 className="text-sm font-semibold text-foreground">Legal</h4>
-            <ul className="space-y-2.5">
-              {legalLinks.map((link) => (
-                <li key={link.path}>
-                  <Link
-                    to={link.path}
-                    className="text-muted-foreground hover:text-foreground text-sm transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         {/* Bottom Bar */}

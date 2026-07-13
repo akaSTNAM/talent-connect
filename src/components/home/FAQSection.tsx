@@ -32,15 +32,10 @@ const faqs = [
     answer:
       'Yes! We specialize in helping international students and visa holders. We prioritize companies known to sponsor work visas and can filter for sponsorship-friendly positions.',
   },
-  {
-    question: 'What if I want to cancel?',
-    answer:
-      'You can cancel anytime. There are no long-term contracts. We offer a 3-day free trial so you can try our service risk-free before committing.',
-  },
+
   {
     question: 'How do I track my applications?',
-    answer:
-      'You get access to a personal dashboard where you can see every job we applied to, the company details, application date, and current status.',
+    answer: 'You\'ll get the same Outlook email we used to apply, so you can track your applications easily.',
   },
 ];
 
