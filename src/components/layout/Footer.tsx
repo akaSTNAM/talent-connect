@@ -8,10 +8,9 @@ import { Mail, Linkedin, Twitter } from 'lucide-react';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const productLinks = [
+const productLinks = [
     { name: 'How It Works', path: '/how-it-works' },
     { name: 'Pricing', path: '/pricing' },
-    { name: 'Dashboard', path: '/dashboard' },
     { name: 'FAQ', path: '/faq' },
   ];
 
