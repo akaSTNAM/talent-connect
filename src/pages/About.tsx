@@ -284,7 +284,7 @@ const AboutPage = () => {
             Ready to Let Us Help?
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Start your 3-day free trial today. No credit card required.
+            Start your 2-day free trial today. No credit card required.
           </p>
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
             <Link to="/signup">

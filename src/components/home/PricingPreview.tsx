@@ -61,7 +61,7 @@ const PricingPreview = () => {
       <SectionHeader
         badge="Pricing"
         title="Simple, Transparent Pricing"
-        subtitle="Start with a 3-day free trial. No credit card required. Cancel anytime."
+        subtitle="Start with a 2-day free trial. No credit card required. Cancel anytime."
       />
 
       <div className="grid md:grid-cols-3 gap-6 lg:gap-8">

@@ -10,7 +10,7 @@ import { Label } from '@/components/ui/label';
  * Signup page for Phoenix Consultancy
  */
 const benefits = [
-  '3-day free trial',
+  '2-day free trial',
   'No credit card required',
   'Cancel anytime',
   'Resume review included',

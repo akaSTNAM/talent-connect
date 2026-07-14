@@ -37,7 +37,7 @@ const CTABanner = () => {
           </h2>
           
           <p className="text-primary-foreground/80 text-lg mb-8 max-w-xl mx-auto">
-            Let us handle your job applications. Start your 3-day free trial 
+            Let us handle your job applications. Start your 2-day free trial 
             today and get back the time you need to prepare for interviews.
           </p>
 
